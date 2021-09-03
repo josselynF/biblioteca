@@ -20,13 +20,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name="t-alumno")
+@Table(name="t-libro")
 public class Libro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String nombre;
+    private String titulo;
     private String genero;
-    private Date fechaNacimiento;
-    private String carrera;
+    private Date fechaIngreso;
+    private String autor;
 }
