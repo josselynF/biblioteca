@@ -1,13 +1,13 @@
-package com.biblioteca.demo;
+package com.proyecto.biblioteca;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class Semana3Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(Semana3Application.class, args);
 	}
 
 }

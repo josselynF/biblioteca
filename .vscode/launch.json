@@ -2,12 +2,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-DemoApplication<demo>",
+            "name": "Spring Boot-Semana3Application<semana3>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.biblioteca.demo.DemoApplication",
-            "projectName": "demo",
+            "mainClass": "com.proyecto.biblioteca.Semana3Application",
+            "projectName": "semana3",
             "args": ""
         }
     ]
