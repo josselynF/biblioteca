@@ -1,5 +1,6 @@
 package com.proyecto.biblioteca.model;
 
+
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -20,13 +21,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name="t-libro")
-public class Libro {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
-    private String titulo;
-    private String genero;
-    private Date fechaIngreso;
-    private String autor;
+@Table(name="t-prestamo")
+public class Prestamo {
+    private Integer id;
+    private Integer idArticulos;
+    private Integer idUsuario;
+    private Date fechaSalidado;
+    private Date fechaMaxDevolucion;
+    private Date fechaDevolucion;
 }
