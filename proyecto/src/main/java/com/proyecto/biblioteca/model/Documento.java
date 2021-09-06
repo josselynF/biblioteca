@@ -21,17 +21,18 @@ import lombok.Setter;
 @Builder
 @Entity
 @Table(name="t-articulo")
-public class Articulo {
+public class Documento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String titulo;
     private Date anioEdicion;
-    private String autor;
+    private Integer idAutor;
+    private String idioma;
     private String paisAutor;
     private String editorial;
     private Integer nroPaginas;
-    private String resumen;
-    private Genero genero; // ingenieria - arquitectura - economia - finanzas ...
-    private Tipo tipo;     //libro - tesis pregtado - paper - revista - tesis postgrado ...
+    private String sipnospi;
+    private Integer idGenero; // ingenieria - arquitectura - economia - finanzas ...
+    private Integer idTipo;     //libro - tesis pregtado - paper - revista - tesis postgrado - informes - articulo
 }

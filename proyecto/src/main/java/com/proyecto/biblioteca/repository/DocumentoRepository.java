@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
-import com.proyecto.biblioteca.model.Libro;
+import com.proyecto.biblioteca.model.Documento;
 
 @Repository
-public interface BibliotecaRepository extends JpaRepository<Libro, String>{
+public interface DocumentoRepository extends JpaRepository<Documento, String>{
     @Query(value = "SELECT o FROM Libro o WHERE o.id=?1")
-    Optional <Libro> findById(String id);
+    Optional <Documento> getDocumentofindById(String id);
 }

@@ -10,23 +10,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Optional;
 
-import com.proyecto.biblioteca.model.Libro;
+import com.proyecto.biblioteca.model.Documento;
 import com.proyecto.biblioteca.repository.BibliotecaRepository;
 
 @Controller
-@RequestMapping("/libro")
-public class LibroController {
+@RequestMapping("/documento")
+public class DocumentoController{
 
-    
     @PostMapping("/registrar")
-    public ResponseEntity<String> registrarLibro(@RequestBody Libro request){
-
+    public ResponseEntity<String> registrarDocumento(@RequestBody Documento request){
+        
         return new ResponseEntity<String>(request.getId(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Libro> findById(@PathVariable String id){
-        return new ResponseEntity<Libro>(HttpStatus.NOT_FOUND);
+    public ResponseEntity<Documento> findById(@PathVariable String id){
+        return new ResponseEntity<Documento>(HttpStatus.NOT_FOUND);
     }
 
 }

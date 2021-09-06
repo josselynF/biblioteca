@@ -19,7 +19,7 @@ import lombok.Setter;
 @Builder
 @Entity
 @Table(name="t-genero")
-public class Genero {
+public class Genero { //MATERIA
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
